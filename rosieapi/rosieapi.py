@@ -5,6 +5,12 @@ from typing import Union
 class Rosie:
     def __init__(self):
         self.url = "https://siesta.red/api/"
+        
+    async def get(self, type: str, endpoint: str) -> str:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(f"{self.url}{type}/{endpoint}") as url:
+                image = await url.json()
+                return image.get("response")
 
     async def text(self, text: str) -> str:
         async with aiohttp.ClientSession() as session:
