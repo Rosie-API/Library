@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='rosie_api',
+    name='rosieapi',
     version='2.0.0',
     author='Rosie-API',
     author_email='contact@error44.tech',
@@ -18,7 +18,7 @@ setup(
         "aiohttp >= 3.6"
     ],
     url='https://github.com/Rosie-API/Library',
-    py_modules=['rosie_api'],
+    py_modules=['rosieapi'],
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
