@@ -6,19 +6,19 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='siesta-api',
+    name='rosie_api',
     version='2.0.0',
-    author='Error44s',
+    author='Rosie-API',
     author_email='contact@error44.tech',
     license='MIT',
-    description='The Siesta API from Error44 as python package',
+    description='The Rosie API from Error44 as python package.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=[
         "aiohttp >= 3.6"
     ],
-    url='https://github.com/Siesta-API/SiestaAPI-Library',
-    py_modules=['siesta-api'],
+    url='https://github.com/Rosie-API/Library',
+    py_modules=['rosie_api'],
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
